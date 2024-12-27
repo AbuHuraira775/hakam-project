@@ -8,7 +8,8 @@ function Navbar() {
         color: '#FF0000',
         fontWeight: '600',
         fontSize: '1.1rem',
-        marginBottom: '1.2rem'    
+        marginBottom: '1.2rem' ,
+        // color: '#0155A5'   
     }
 
     return (
