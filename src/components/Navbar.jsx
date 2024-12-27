@@ -56,7 +56,7 @@ function Navbar() {
 
 
 
-            {!mobileNav ?
+            {mobileNav ?
                 <div className="fixed h-[100vh] z-20 bg-white w-screen">
                     <div className="mobile-header-wrapper-inner">
                         <div className="mobile-header-content-area">
