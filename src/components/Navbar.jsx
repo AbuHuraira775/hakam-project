@@ -5,11 +5,11 @@ function Navbar() {
     const [mobileNav, setMobileNav] = useState(false)
 
     const liStyle = {
-        color: '#FF0000',
+        // color: '#FF0000',
         fontWeight: '600',
         fontSize: '1.1rem',
         marginBottom: '1.2rem' ,
-        // color: '#0155A5'   
+        color: '#0155A5'   
     }
 
     return (
@@ -36,7 +36,7 @@ function Navbar() {
                                     <li><Link to='/pharmacy'>24 Hours Pharmacy</Link></li>
                                 </ul>
                             </nav>
-                            <div className="burger-icon burger-icon-white relative z-10 " onClick={() => setMobileNav(!mobileNav)}>
+                            <div className="burger-icon burger-icon-white  " onClick={() => setMobileNav(!mobileNav)}>
                                 <span className="burger-icon-top"></span>
                                 <span className="burger-icon-mid"></span>
                                 <span className="burger-icon-bottom"></span>
@@ -58,15 +58,15 @@ function Navbar() {
 
 
             {mobileNav ?
-                <div className="fixed h-[100vh] z-20 bg-white w-screen">
+                <div className="fixed h-[100vh] z-20 bg-white w-screen                ">
                     <div className="mobile-header-wrapper-inner">
                         <div className="mobile-header-content-area">
                             <div className="perfect-scroll">
                                 <div className="mobile-menu-wrap mobile-header-border">
-                                    <nav className=' w-screen py-9 pl-35 pr-3'>
+                                    <nav className=' w-screen py-9 pl-35 pr-20'>
 
                                         <div className="cross flex items-center justify-end" onClick={() => setMobileNav(!mobileNav)}>
-                                            <i className='fa-solid fa-xmark text-3xl'></i>
+                                            <i className='fa-solid fa-xmark text-3xl  '></i>
                                         </div>
                                         <ul className="mobile-menu font-heading " onClick={() => setMobileNav(!mobileNav)}>
                                             <li  style={liStyle}><Link to='/'><a href="index.html">Home</a></Link></li>
